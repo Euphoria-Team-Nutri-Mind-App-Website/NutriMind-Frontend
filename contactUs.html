@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="./contactUs.js"></script>
+    <title>ContactUs</title>
 </head>
 <body>
+    <div class="header " id="header">
+        <div class="container ">
+            <a href="#" class="logo ">
+                <img src="./Images/Group.png" alt="Logo" />
+            </a>
+            <ul class="main-nav ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#podcasts">Podcasts</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
     
+
+
+
+   <div class="contactUs">
+        <div class="textContact">
+            <h2>Let’s Talk</h2>
+            <p>IF you have a problem,
+            contact Us ....</p>
+            <form id="contactForm" onsubmit="return validateForm()">
+                <div>
+                    <label for="name">Enter your Name</label><br>
+                    <input type="text" id="name" name="name">
+                    <span id="nameError" class="error"></span>
+                </div><br>
+
+                <div>
+                    <label for="email">Enter your Email</label><br>
+                    <input type="email" id="email" name="email">
+                    <span id="emailError" class="error"></span>
+                </div><br>
+            
+                <div>
+                    <label for="message">Enter your Message</label><br>
+                    <textarea id="message" name="message"></textarea>
+                    <span id="messageError" class="error"></span>
+                </div><br>
+
+                <input id="submit" type="submit" value="Send Message">
+        </form>
+        </div>
+        <div class="imageContact">
+            <img  class="photo" src="./Images/OBJECTS.png"><br>
+            <div class="icons">
+            <img src="./Images/Vector (2).png"><a href="">  + 456 765 985</a><br>
+            <img src="./Images/Vector (3).png"><a href="">supports @ NutriMind . com</a><br>
+            <img src="./Images/Vector (1).png"><a id="email-link" href="">WWW . NutriMind . com</a><br>
+            <img src="./Images/google 2.png"><img src="./Images/facebook (2) 2.png"><br>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
